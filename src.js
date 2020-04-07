@@ -6,6 +6,7 @@ const utils = require('./utils.js')
 
 const app = express()
 
+const port = process.env.PORT || 3000
 //Definepaths for express configuration
 const viewsPath = path.join(__dirname,'/template/views') 
 const partialsPath = path.join(__dirname,'/template/partials')
@@ -65,6 +66,6 @@ app.get('/weather',(req,res) => {
 app.get('*',(req,res) => {
     res.send("This my error page:")
 })    
-app.listen(3000,() => {
-    console.log("Server is up on port: 3000")
+app.listen(port,() => {
+    console.log("Server is up on port: "+port)
 }) 
