@@ -19,7 +19,7 @@ const geoCode = (address, callback) => {
     })
 }
 const forecast = (a,b,callback) => {
-    request({url:"https://api.darksky.net/forecast/9a75c3fe09e23b1be6e44d4dc49e4bfe/"+a+","+b,json:true},(error,response) => {
+    request({url:"https://api.darksky.net/forecast/9a75c3fe09e23b1be6e44d4dc49e4bfe/"+a+","+b+"?units=si",json:true},(error,response) => {
         if(error){
             callback("Check your network connection",undefined)
         }
