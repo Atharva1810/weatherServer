@@ -5,7 +5,7 @@ const geoCode = (address, callback) => {
         if(error){
             callback(error,undefined)
         }
-        else if(response.body.features.length == 0){
+        else if(response.body.features.length === 0){
             callback(error,undefined)
         }
         else{
