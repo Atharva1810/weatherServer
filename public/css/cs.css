@@ -1,52 +1,57 @@
 body {
-    color: #333333;
-    font-family: arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
-    background-color: papayawhip;
-    
+  color: #444;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
+  background-image: url("https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .main-content {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
-    
+  color: #444;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
 }
 
 header {
-    margin-top: 16px;
-    margin-bottom: 48px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 h1 {
-    font-size: 64px;
-    margin-bottom: 16px;
+  font-size: 50px;
+  margin-bottom: 12px;
 }
 
 header a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
 }
-input{
-    border: 1px #cccccc;
-    padding: 8px;
+input {
+  border: 1px #cccccc;
+  padding: 8px;
 }
-button{
-    border: 1px #cccccc;
-    cursor: pointer;
-    color:white;
-    padding: 8px;
-    background:#888888;
+button {
+  border: 1px #cccccc;
+  cursor: pointer;
+  color: white;
+  padding: 8px;
+  background: #888888;
+}
+
+#response {
+  color: #111;
 }

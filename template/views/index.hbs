@@ -1,4 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/cs.css">
+</head>
+<body>
+
+    <div class="main-content">
+        {{>header}}
+        <p>Enter the location to get the weather</p>
+        <form >
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <div id="response">
+            <p id="message-1"> </p>
+            <p id="message-2"> </p>
+            <p id="message-3"> </p>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="/js/ap.js"></script>
+    
+</body>
+</html>
+
+
+{{!-- OLD CODE --}}
+{{!-- <html>
 
 <head>
     <title>Weather</title>
@@ -6,14 +39,17 @@
     <link rel="stylesheet" href="/css/cs.css">
   
 </head>
-<style> body{
-            background-image: url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg');
-            background-attachment: fixed;
-            background-size: 100% 100%;}
+<style> 
+    body{
+        background-image: url('https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg');
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        }
 </style>
 <body>
     <div class="main-content">
         {{>header}}
+        
 
         <p>Use this site to get your weather!</p>
         <form >
@@ -28,4 +64,4 @@
     <script src="/js/ap.js"></script>
 </body>
 
-</html>
+</html> --}}
